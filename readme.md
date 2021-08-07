@@ -72,3 +72,11 @@
 ## Key Insights for Presentation
 
 > Select one or two main threads from your exploration to polish up for your presentation. Note any changes in design from your exploration step here.
+
+
+## How to Run the project:
+- Insrt raw data download in __"./data/raw"__
+- Run the script __"Communicate-Dtata-Finding\src\data\make_dataset.py"__
+- Now you can find output data from script  __"Communicate-Dtata-Finding/data/interim/*.csv"__
+- Run the notebook in __"Communicate-Dtata-Finding\notebooks\exploration.ipynb"__ to find __Exploratory data__
+- Run the notebook in __"Communicate-Dtata-Finding\notebooks\explanatory.ipynb"__ to find __Explanatory data__
