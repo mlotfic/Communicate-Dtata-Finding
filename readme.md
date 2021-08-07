@@ -80,3 +80,7 @@
 - Now you can find output data from script  __"Communicate-Dtata-Finding/data/interim/*.csv"__
 - Run the notebook in __"Communicate-Dtata-Finding\notebooks\exploration.ipynb"__ to find __Exploratory data__
 - Run the notebook in __"Communicate-Dtata-Finding\notebooks\explanatory.ipynb"__ to find __Explanatory data__
+
+## Resources :
+- [DataExpo2009](https://community.amstat.org/jointscsg-section/dataexpo/dataexpo2009)
+- [Kaggle](https://www.kaggle.com/adveros/flight-delay-eda-exploratory-data-analysis)
