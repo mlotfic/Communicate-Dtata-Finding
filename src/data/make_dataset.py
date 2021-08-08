@@ -187,11 +187,9 @@ t2 = time.time()
 print('Elapsed saving time :', t2-t1)
 del df_cancelled
 
-df_diverted = df[df.Diverted == '1'].drop(columns=['ArrTime', 'CRSArrTime', 'UniqueCarrier', 'ActualElapsedTime', 
-                                                 'CRSElapsedTime', 'AirTime', 'ArrDelay', 'DepDelay', 'Origin', 
-                                                 'Dest', 'Distance', 'Cancelled', 'CancellationCode', 'Diverted', 
+df_diverted = df[df.Diverted == '1'].drop(columns=['ArrTime', 'CRSArrTime', 'CRSElapsedTime', 'Cancelled', 'CancellationCode', 'Diverted', 
                                                  'CarrierDelay', 'WeatherDelay', 'NASDelay', 'SecurityDelay', 
-                                                 'LateAircraftDelay'])
+                                                 'LateAircraftDelay', 'TaxiIn', 'TaxiOut'])
 t1 = time.time()
 df_diverted.to_csv('{}/data/interim/{}.csv'.format(relative_path, 'diverted'), index=False)
 t2 = time.time()
