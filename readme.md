@@ -66,11 +66,31 @@
 
 ## Summary of Findings
 
-> Summarize all of your findings from your exploration here, whether you plan on bringing them into your explanatory presentation or not.
+### 01. Flights without cancellation nor divertion dataset:
+#### What is the structure of your dataset?
+> There are 6,851,832 flight observations with 26 features in 2008 without diverted/cancelled flights and missing or incorrect​ data.
+#### What is/are the main feature(s) of interest in your dataset?
+> Delayed flights in terms of carriers, origin & time.
+#### What features in the dataset do you think will help support your investigation into your feature(s) of interest?
+> ArrDelay, Month, DayOfWeek, DepTime, ArrTime, UniqueCarrier.
+### 02. Flights that have been Cancellation:
+#### What is the structure of your dataset?
+> There are 137,434 flight observations with 12 features in 2008.
+#### What is/are the main feature(s) of interest in your dataset?
+ - what are the worstest airlines in terms of cancelled flighes?
+ - what are the most cases of flights cancelled?
+#### What features in the dataset do you think will help support your investigation into your feature(s) of interest?
+> UniqueCarrier, CancellationCode
 
+### 03. Flights that have been diverted:
+#### What is the structure of your dataset?
+> There are 17,265 flight observations with 12 features in 2008.
+#### What is/are the main feature(s) of interest in your dataset?
+> what are the Origin & Dest that have the most diverted flighes?
+#### What features in the dataset do you think will help support your investigation into your feature(s) of interest?
+> Origin & Dest.
 
 ## Key Insights for Presentation
-
 ### key findings:
 01. Flights status distribution in 2008
 02. Flight delay reasons and how much they contribute to the number of delayed flights
