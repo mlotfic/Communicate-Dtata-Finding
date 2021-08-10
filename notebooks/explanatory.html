@@ -14270,7 +14270,6 @@ a.anchor-link {
 <li>The worest day to travel.</li>
 <li>Which Airlines have the longest delays?</li>
 <li>What is the worst time of day to travel?</li>
-<li></li>
 </ol>
 <h2 id="insights-:">insights :<a class="anchor-link" href="#insights-:">&#182;</a></h2><ol>
 <li>It turn out most of flight arrive early , nearly 70%.</li>
@@ -16080,10 +16079,10 @@ before you finish your presentation!</p>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[175]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[182]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>jupyter nbconvert ./explanatory.ipynb --to slides --template ./output-toggle.tpl --post serve
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>jupyter nbconvert ./explanatory.ipynb --to slides --template ./output_toggle.tpl --post serve
 </pre></div>
 
      </div>
@@ -16127,17 +16126,15 @@ Traceback (most recent call last):
     return super().from_notebook_node(nb, resources, **kw)
   File &#34;C:\ProgramData\Anaconda3\lib\site-packages\nbconvert\exporters\templateexporter.py&#34;, line 384, in from_notebook_node
     output = self.template.render(nb=nb_copy, resources=resources)
-  File &#34;C:\ProgramData\Anaconda3\lib\site-packages\nbconvert\exporters\templateexporter.py&#34;, line 148, in template
-    self._template_cached = self._load_template()
-  File &#34;C:\ProgramData\Anaconda3\lib\site-packages\nbconvert\exporters\templateexporter.py&#34;, line 355, in _load_template
-    return self.environment.get_template(template_file)
-  File &#34;C:\ProgramData\Anaconda3\lib\site-packages\jinja2\environment.py&#34;, line 883, in get_template
-    return self._load_template(name, self.make_globals(globals))
-  File &#34;C:\ProgramData\Anaconda3\lib\site-packages\jinja2\environment.py&#34;, line 857, in _load_template
-    template = self.loader.load(self, name, globals)
-  File &#34;C:\ProgramData\Anaconda3\lib\site-packages\jinja2\loaders.py&#34;, line 429, in load
-    raise TemplateNotFound(name)
-jinja2.exceptions.TemplateNotFound: output-toggle.tpl
+  File &#34;C:\ProgramData\Anaconda3\lib\site-packages\jinja2\environment.py&#34;, line 1090, in render
+    self.environment.handle_exception()
+  File &#34;C:\ProgramData\Anaconda3\lib\site-packages\jinja2\environment.py&#34;, line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File &#34;C:\ProgramData\Anaconda3\lib\site-packages\jinja2\_compat.py&#34;, line 28, in reraise
+    raise value.with_traceback(tb)
+  File &#34;H:\__Freelancer\project#06 visulization\DataExpo2009\Communicate-Dtata-Finding\notebooks\output_toggle.tpl&#34;, line 5, in top-level template code
+    {%- extends &#39;slides_reveal.tpl&#39; -%}
+jinja2.exceptions.TemplateNotFound: slides_reveal.tpl
 </pre>
 </div>
 </div>
@@ -16149,7 +16146,7 @@ jinja2.exceptions.TemplateNotFound: output-toggle.tpl
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[181]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[183]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>jupyter nbconvert explanatory.ipynb --to slides --post serve --no-input --no-prompt
@@ -16173,7 +16170,7 @@ jinja2.exceptions.TemplateNotFound: output-toggle.tpl
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
 <pre>[NbConvertApp] Converting notebook explanatory.ipynb to slides
-[NbConvertApp] Writing 1041642 bytes to explanatory.slides.html
+[NbConvertApp] Writing 1014756 bytes to explanatory.slides.html
 [NbConvertApp] Redirecting reveal.js requests to https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0
 Traceback (most recent call last):
   File &#34;C:\ProgramData\Anaconda3\Scripts\jupyter-nbconvert-script.py&#34;, line 10, in &lt;module&gt;
