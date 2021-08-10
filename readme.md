@@ -8,7 +8,7 @@
 - The data comes originally from RITA where it is described in detail. 
 - the data in bzipped csv file. 
 - These files have derivable variables removed, are packaged in yearly chunks and have been more heavily compressed than the originals.
-- in this project we will discuss​ flight delay for 2008 data set
+- in this project we will discuss flight delay for 2008 data set
 - Script locat 
 
 #### individual years:
@@ -71,7 +71,19 @@
 
 ## Key Insights for Presentation
 
-> Select one or two main threads from your exploration to polish up for your presentation. Note any changes in design from your exploration step here.
+### key findings:
+01. Flights status distribution in 2008
+02. Flight delay reasons and how much they contribute to the number of delayed flights
+03. The worest day to travel.
+04. Which Airlines have the longest delays?
+05. What is the worst time of day to travel?
+
+### insights :
+01. It turn out most of flight arrive early , nearly 70%.
+02. We also see that the weather is not the main reason for delays. Weather only contributes to 2% of the delays.
+03. The wostest arrival time delay ocurr Tuesday for most of carriers
+04. B6 had the worst for arrivals delay and the lowest departure delay, while AQ, HA and YV has the lowest arravial delay
+05. unstable arrival delay between 12:00 AM to 05:00 AM, a huge crowd gathered between 05:00 AM to 06:00 AM
 
 
 ## How to Run the project:
